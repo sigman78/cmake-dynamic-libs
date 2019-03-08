@@ -11,8 +11,8 @@ int main()
     // access statics
     bar::some::field = 123;
 
-    // access crossreferenced library symbol (DOES NOT WORK)
-    // foo::other ot;
+    // access crossreferenced library symbol (DOES WORK with export/all)
+    foo::other ot;
         
     return 0;
 }
